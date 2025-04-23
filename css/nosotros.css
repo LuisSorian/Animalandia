@@ -60,7 +60,7 @@ main p {
 }
 
 .butcard img {
-    width: 0px;
+    width: 50px;
     display: flex;
     justify-content: center;
 }
