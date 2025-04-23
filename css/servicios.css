@@ -54,7 +54,7 @@ main h2 {
 }
 
 .butcard img {
-    width: 0px;
+    width: 50px;
     display: flex;
     justify-content: center;
 }
