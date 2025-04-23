@@ -24,19 +24,6 @@ nav {
     background-color: #94A876;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-main h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-}
-
 .butcard {
     display: flex;
     justify-content: center;
@@ -44,7 +31,8 @@ main h2 {
     background-color: #FFFFFF;
     border-radius: 30px;
     padding-right: 150px;
-    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
 }
 
@@ -54,9 +42,7 @@ main h2 {
 }
 
 .butcard img {
-    width: 0px;
-    display: flex;
-    justify-content: center;
+    width: 50px;
 }
 
 .butcard a {
@@ -76,7 +62,6 @@ footer {
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
     display: flex;
     justify-content: center;
-    margin-top: 30px;
 }
 
 footer div {
@@ -84,79 +69,159 @@ footer div {
     border-radius: 30px;
     color: #9F8D8D;
     font-size: 35px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 40px 100px;
+    transform: scale(1.30);
+}
+
+.redes img {
+    width: 50px;
+    height: 50px;
+}
+
+.globalir {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 70px 0;
+    background-color: #94A876;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
+}
+
+.datos {
+    font-size: 19px;
+    background-color: #94A876;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
+}
+
+.text {
     display: flex;
     justify-content: center;
 }
 
-.expedi,
-.merca,
-.lugares {
-    background-color: white;
-    border: 20px solid #94A876;
-    border-radius: 45px;
+.globaler {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0;
+}
+
+.agr1 {
+    margin-top: 150px;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1.30);
+}
+
+.agr2 {
+    margin-top: 70px;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1.30);
+}
+
+.tarjetaU {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    border: 1px solid #94A876;
+    border-radius: 15px;
+    background-color: #94A876;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
-    color: #9F8D8D;
 }
 
-.expedi:hover,
-.merca:hover,
-.lugares:hover {
-    transform: scale(1.08);
-    font-size: 30px;
+.usuario p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
 }
 
-.expedi img,
-.merca img,
-.lugares img {
-    width: 350px;
-    height: 350px;
-    border: 20px solid #94A876;
-    border-radius: 25px;
+.contactanos p {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+hr {
+    background-color: #9F8D8D;
+}
+
+.enviar {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin-left: 300px;
+    width: 50px;
+}
+
+.enviar:hover {
+    background-color: #F4F4F4;
+    transform: scale(1.05);
 }
 
 @media (max-width: 1085px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-        font-size: 3px;
+    .butcard img {
+        width: 0px;
     }
 
     nav .butcard {
-        width: 3px;
-        font-size: 3px;
-        display: flex;
-        justify-content: center;
+        font-size: 25px;
+        padding-right: 30px;
     }
 
     .butcard a {
         font-size: 25px;
     }
 
-    .butcard img {
-        width: 0px;
-        display: flex;
+    .redes {
+        transform: scale(1);
+        margin: 20px 40px;
+    }
+
+    .globaler {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .agr1, .agr2 {
+        transform: scale(1);
+        margin-top: 30px;
+    }
+
+    .tarjetaU {
+        width: 90%;
+    }
+
+    .enviar {
+        margin-left: 0;
         justify-content: center;
+        align-items: center;
+        align-self: center;
     }
 
-    main h2 {
-        font-size: 24px;
-    }
-
-    .expedi img,
-    .merca img,
-    .lugares img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .expedi,
-    .merca,
-    .lugares {
-        margin: 15px 0;
-        padding: 15px;
+    .datos {
+        font-size: 16px;
     }
 
     footer div {
         font-size: 25px;
+    }
+
+    header {
+        font-size: 35px;
+        height: 200px;
     }
 }
