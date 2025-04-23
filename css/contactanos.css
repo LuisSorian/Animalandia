@@ -172,7 +172,9 @@ hr {
 }
 
 @media (max-width: 1085px) {
-    nav .butcard img {
+    .butcard img {
+        justify-content: center;
+        display: flex;
         width: 0px;
     }
 
