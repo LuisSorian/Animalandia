@@ -5,7 +5,7 @@ body {
     font-family: "Miltonian Tattoo", serif;
 }
 
-header{
+header {
     color: white;
     display: flex;
     justify-content: center;
@@ -18,15 +18,39 @@ header{
     background-size: cover;
 }
 
-.butcard{
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #94A876;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h2 {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+main p {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.butcard {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 30px;
     padding-right: 150px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
 }
 
@@ -35,17 +59,13 @@ header{
     transform: scale(1.05);
 }
 
-nav {
+.butcard img {
+    width: 0px;
     display: flex;
-    justify-content: space-around;
-    background-color: #94A876;
+    justify-content: center;
 }
 
-.butcard img{
-    width: 50px;
-}
-
-.butcard a{
+.butcard a {
     width: 50px;
     margin-left: 15px;
     font-size: 35px;
@@ -55,11 +75,6 @@ nav {
     padding-left: 30px;
 }
 
-.parte2{
-    display: flex;
-    justify-content: center;
-}
-
 footer {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -67,69 +82,90 @@ footer {
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
-footer div{
+footer div {
     background-color: white;
     border-radius: 30px;
     color: #9F8D8D;
     font-size: 35px;
+    display: flex;
+    justify-content: center;
 }
 
-.inspiracion{
+.parte2 {
+    display: flex;
+    justify-content: center;
+}
+
+.inspiracion {
     display: flex;
     justify-content: right;
     flex-direction: column;
     background-color: white;
     border-radius: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 30px 50px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
 }
 
-.meta{
+.meta {
     display: flex;
     justify-content: left;
     flex-direction: column;
     background-color: white;
     border-radius: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin: 30px 90px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
 }
 
-.mision{
+.mision {
     display: flex;
     justify-content: right;
     flex-direction: column;
     background-color: white;
     border-radius: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 30px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+@media (max-width: 1085px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        font-size: 3px;
+    }
 
-main h2{
-    font-size: 80px;
-    display: flex;
-    justify-content: center;
-}
+    nav .butcard {
+        width: 3px;
+        font-size: 3px;
+        display: flex;
+        justify-content: center;
+    }
 
-main p{
-    font-size: 30px;
-    display: flex;
-    justify-content:center;
+    .butcard a {
+        font-size: 25px;
+    }
+
+    .butcard img {
+        width: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inspiracion, .meta, .mision {
+        margin: 15px;
+    }
+
+    main h2 {
+        font-size: 40px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+
+    footer div {
+        font-size: 25px;
+    }
 }
